@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extracted Text</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        ul {
+            list-style-type: none; /* Removes default bullets */
+            padding: 0; /* Removes default padding */
+        }
+        li {
+            margin-bottom: 10px; /* Adds space between list items */
+        }
+    </style>
+</head>
+<body>
+    <h1>Extracted Text</h1>
+    <ul>
+        {% for line in text.split('\n') %}
+            {% if line.strip() %} <!-- This will ignore empty lines -->
+                <li>{{ line }}</li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+</body>
+</html>

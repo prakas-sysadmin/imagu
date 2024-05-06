@@ -27,5 +27,5 @@ __** CLI Tool and pip packages are comming soon...__
 Contributions are welcome! If you have any ideas for new features, bug fixes, or improvements, please open an issue or submit a pull request.
 
 ### License
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is not licensed under the MIT License.
 
